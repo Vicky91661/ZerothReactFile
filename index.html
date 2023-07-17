@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="root">Not Used</div>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        const Navbar=(
+            <div>
+                <p>about</p>
+                <p>about Us</p>
+            </div>
+        );
+
+        const main =(
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa voluptatem unde, repellat sapiente ea corrupti facilis commodi obcaecati aut. Amet nobis sapiente esse officiis nisi expedita ipsa voluptate quo accusantium.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, ipsam?</p>
+
+            </div>
+        );
+        const Footer=(
+            <div>
+                <p>Copyright @2023 Vicky_Shah</p>
+            </div>
+        );
+        const App =(
+            <div>
+                {Navbar} {main} {Footer}
+            </div>
+        );
+
+        ReactDOM.render(App,home);
+    </script>
+</body>
+</html>
