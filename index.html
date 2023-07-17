@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .header{
+            color : brown;
+            border: 5px solid black;
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
-    <div class="root">Not Used</div>
+    <div id="root">Not Used</div>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
-        const Navbar=(
-            <div>
+        const home =document.getElementById("root");
+
+        const csss= { color: "blue", fontSize: "25px" };
+
+        const Navbar1=(
+            <div style={csss}>
                 <p>about</p>
                 <p>about Us</p>
             </div>
         );
+        const Navbar2 = (
+                <div className="header">
+                    <p>about</p>
+                    <p>about Us</p>
+                </div>
+            );
 
         const main =(
             <div>
@@ -32,7 +49,7 @@
         );
         const App =(
             <div>
-                {Navbar} {main} {Footer}
+                {Navbar1} {main} {Footer} {Navbar2}
             </div>
         );
 
